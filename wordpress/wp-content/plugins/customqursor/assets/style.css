@@ -1,0 +1,28 @@
+#cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+    transition: transform 0.05s ease-out;
+    z-index: 999;
+}
+
+#cursor .point {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#cursor > * {
+    max-width: 50px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
